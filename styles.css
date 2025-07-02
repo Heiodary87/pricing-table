@@ -1,0 +1,115 @@
+/* GLOBALS */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: goldenrod;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: hsl(120, 5%, 25%);
+  border: solid green 4px;
+}
+
+/* SHARED CARD STYLES */
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 128, 0, 0.2);
+  transition: transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* INDIVIDUAL CARD COLORS */
+.tag-1 {
+  background-color: white;
+  color: green;
+  border: solid green 2px;
+}
+
+.tag-2 {
+  background-color: greenyellow;
+  color: black;
+  border: solid green 2px;
+  position: relative;
+}
+
+.tag-3 {
+  background-color: white;
+  color: green;
+  border: solid green 2px;
+}
+
+/* BADGE */
+.badge {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* FEATURES LIST */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* PRICE TEXT */
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+button {
+  background: green;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
